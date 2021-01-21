@@ -1,5 +1,52 @@
 /* add your custome css here */
-
-.container {
-  max-width: 1140px;
+.mode-light {
+  width: 100px;
+  height: 100px;
+  background-color: #ffcf11;
+  border-radius: 50%;
+  position: absolute;
+  top: 80px;
+  left: 200px;
+  z-index: 1;
+  opacity: 1;
+  box-shadow: 0px 0px 52px 2px rgba(255, 207, 17, 0.8);
+}
+.dark .mode-light {
+  background-color: #f4fefe;
+  box-shadow: 0px 0px 30px 0px rgba(250, 250, 250, 1);
+}
+.star {
+  animation: animate linear infinite;
+  box-shadow: 0 0 10px 0 #fafafa11;
+}
+@keyframes animate {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  10%,
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+}
+.cloud {
+  animation: animateCloud linear infinite;
+}
+@keyframes animateCloud {
+  0% {
+    opacity: 0;
+    transform: translateX(0);
+  }
+  15%,
+  85% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(300px);
+  }
 }

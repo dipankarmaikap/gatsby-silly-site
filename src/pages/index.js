@@ -1,17 +1,20 @@
 import React from "react";
-import { Link } from "gatsby";
 import Layout from "../components/base/Layout";
 import SEO from "../components/base/SEO";
+import TodoList from "../components/todo/TodoList";
+import TodoForm from "../components/todo/TodoForm";
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
-    <h1 className="text-4xl font-bold">Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <Link className="underline" to="/page-2/">
-      Go to page 2
-    </Link>
+    <SEO
+      title="#SillySiteChallange - Talking todo list"
+      description="A todo list that speaks. Created for gatsby SillySiteChallange"
+    />
+    <div className="homepage border-2 border-gray-900 dark:border-gray-100 bg-blue-100 rounded-lg dark:bg-gray-800 p-4 py-8 text-gray-800 dark:text-gray-100 smooth">
+      <h1 className="text-4xl font-bold text-center">Talking TodoList</h1>
+      <TodoForm />
+      <TodoList />
+    </div>
   </Layout>
 );
 

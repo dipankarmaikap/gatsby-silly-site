@@ -1,4 +1,5 @@
 module.exports = {
+  darkMode: "class",
   purge: {
     enabled: false,
   },
@@ -7,6 +8,10 @@ module.exports = {
       colors: {},
     },
   },
-  variants: {},
+  variants: {
+    extend: {
+      opacity: ["dark"],
+    },
+  },
   plugins: [],
 };
